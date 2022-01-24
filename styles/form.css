@@ -1,0 +1,126 @@
+main.content .intro.formulaire .content-text{
+    width: 100%;
+    float: none;
+}
+main.content .intro.formulaire .content-text h2{
+    text-align: center;
+}
+main.content .intro.formulaire .content-text p{
+    width: 100%;
+}
+main.content > h2{
+    width:100%;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+}
+main.content > h2 > div{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(((100% / 12) * 6) - 4px);
+    text-align: center;
+    padding: 10px;
+}
+main.content > h2 > div:first-child{
+    border-right : 1px solid #fff;
+}
+main.content > h2 > div:first-child span{
+    border-bottom : 5px solid orange;
+}
+main.content > h2 > div:last-child{
+    border-left : 1px solid #fff;
+}
+main.content > h2 > div > span{
+    color: #1abc9c;
+    cursor: pointer;
+}
+main.content > .juristeForm,
+main.content > .auteurForm{
+    width: 100%;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 15px;
+}
+main.content form{
+    padding: 10px;
+}
+main.content form .wrap_input{
+    position: relative;
+    margin: 10px;
+}
+main.content form .wrap_input label{
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: #4b6584;
+    text-decoration: underline;
+}
+main.content form .wrap_input input[type="checkbox"] + span{
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: #4b6584;
+    font-size: 12px;
+}
+main.content form .wrap_input input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none; 
+    background: rgba(75, 101, 132,.05);
+    color: #40739e;
+    letter-spacing: 1px;
+}
+main.content form .wrap_input textarea{
+    width: 100%;
+    height: 125px;
+    resize:vertical;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: rgba(75, 101, 132, .05);
+    color: #40739e;
+    padding: 8px;
+    letter-spacing: 1px;
+}
+main.content form .wrap_input input[type="file"]{
+    letter-spacing: 1px;
+    font-style: italic;
+    color: #4b6584;
+    margin-top: 5px;
+}
+main.content form .wrap_input input[type="checkbox"]{
+    position: relative;
+    visibility:hidden;
+}
+input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #4b6584;
+    visibility: visible;
+    background: #fff;
+    border-radius: 1px;
+}
+input[type="checkbox"]:checked:before{
+    background: #1abc9c;
+}
+main.content form .wrap_input input[type="submit"]{
+    display: block;
+    width: 75%;
+    margin: 5px auto;
+    padding: 8px;
+
+}
+main.content > .auteurForm{
+    display: none;
+}

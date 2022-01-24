@@ -1,0 +1,102 @@
+.container-slider{
+    width: 360px;
+    margin: 0 auto;
+}
+.arrow-left{
+    position: relative;
+    top: 300px;
+    transform: translateY(-50%);
+    float: left;
+    border-width : 25px;
+    border-left-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    z-index: 1;
+}.slider{
+    position: relative;
+    float: left;
+    width: calc(100% - 70px);
+    border: 2px solid #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    height: 600px;
+    overflow: hidden;
+}
+.arrow-right{
+    position: relative;
+    top: 300px;
+    transform: translateY(-50%);
+    float: left;
+    border-width : 25px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    z-index: 1;
+}
+.slider .slides{
+    position: absolute;
+    height: 530px;
+    top: 45px;
+    bottom: 20px;
+    right: 3px;
+    left: 3px;
+    overflow: hidden;
+}
+.slider .slides > ul{
+    position: relative;
+    left: 0px;
+    width: 2520px;
+    height: 510px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    transition: 1s;
+}
+div.slider .slides > ul > li{
+    float: left;
+    width: 250px;
+    margin: 0 15px;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0,0,0,.04) 0%, transparent 50%, rgba(0,0,0,.04) 100%);
+}
+div.slider article{
+    padding: 10px;
+}
+div.slider article > figure{
+    margin: 1px;
+    padding-top: 20px;
+    width: 80%;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+div.slider article > figure img{
+    display: block;
+    width: 100%;
+}
+div.slider article > h3{
+    color: #ff793f;
+    text-align: center;
+}
+div.slider article > p{
+    padding: 15px;
+    color: #474787;
+}
+@media screen and (min-width: 680px){
+    .container-slider{
+        width: 640px;
+    }
+}
+@media screen and (min-width: 1520px){
+    .container-slider{
+        width: 920px;
+    }
+}

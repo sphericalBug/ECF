@@ -1,0 +1,54 @@
+aside div.post{
+    background: linear-gradient(to bottom right, rgba(0,0,0,.04) 0%, transparent 50%, rgba(0,0,0,.04) 100%);
+}
+aside div.post section.post a{
+    display: block;
+    text-decoration: none;
+    padding: 0;
+}
+aside div.post section.post a > figure{
+    margin: 0;
+    width: 100%;
+    background: rgba(255,255,255,.8);
+}
+aside div.post section.post a > figure > img{
+    display: block;
+    width: 100%;
+}
+aside div.post section.post a > figure > figcaption{
+    color: #84817a;
+    font-size: 10px;
+    text-align: right;
+    font-style: italic;
+}
+aside div.post section.post a > figure > figcaption > span{
+    display: block;
+}
+aside div.post section.post p{
+    margin: 0;
+    padding: 5px;
+    text-align: justify;
+    font-size: 12px;
+    color: #aaa69d;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 680px){
+    aside{
+        width: 640px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    aside{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(((100% / 12) * 4) - 4px);
+        margin: 0;
+        border: 2px solid #fff;
+        padding: 25px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+}
